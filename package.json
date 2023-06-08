@@ -2,7 +2,7 @@
   "name": "password-jenerator",
   "version": "1.0.0",
   "description": "generates password based on input length, startsWith and endsWith parameters. Created on a weekend just for fun.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/poorneshhn/password-generator"
