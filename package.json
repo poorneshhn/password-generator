@@ -1,0 +1,27 @@
+{
+  "name": "password-jenerator",
+  "version": "1.0.0",
+  "description": "generates password based on input length, startsWith and endsWith parameters. Created on a weekend just for fun.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-user/repo-url.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon dist/index.js",
+    "prepublishOnly": "tsc"
+  },
+  "author": "poorneshhn3@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "typescript": "^5.1.3"
+  }
+}
