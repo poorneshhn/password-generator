@@ -1,1 +1,2 @@
-export * as generatePassword from "./generatePassword";
+import generatePassword from "./generatePassword";
+export default generatePassword;

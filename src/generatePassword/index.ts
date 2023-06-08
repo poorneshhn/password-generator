@@ -1,13 +1,13 @@
-import generateRandomNumber from "./utils/generateRandomNumber";
-import getCharFromAscii from "./utils/getCharFromAscii";
-import { ASCII_START, ASCII_END } from "./utils/constants";
-import checkForErrorsInArguments from "./utils/checkForErrorsInArguments";
+import generateRandomNumber from "../utils/generateRandomNumber";
+import getCharFromAscii from "../utils/getCharFromAscii";
+import { ASCII_START, ASCII_END } from "../utils/constants";
+import checkForErrorsInArguments from "../utils/checkForErrorsInArguments";
 
-export default function generatePassword(
+const generatePassword = (
   passwordLength?: number,
   startsWith?: string,
   endsWith?: string
-) {
+) => {
   checkForErrorsInArguments(passwordLength, startsWith, endsWith);
   if (
     !(
@@ -38,4 +38,6 @@ export default function generatePassword(
     password += endsWith;
   }
   return password;
-}
+};
+
+export default generatePassword;
